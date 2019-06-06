@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ball Blast</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+  <style media="screen">
+    canvas {
+        border:solid 1px black;
+      }
+      div{
+        display: none;
+      }
+      button:hover{
+        cursor: pointer;
+        background-color: #866ec7;
+
+      }
+      h1 {
+        font-family: 'Montserrat', sans-serif;
+      }
+      div{
+        border-radius: 10px;
+        width:550px;
+        height: 200px;
+        padding: 10px;
+        background-color: #ffd7e8;
+        border: 1px solid #f2c0ff;
+        margin-left: 150px;
+        color: #bf9fee;
+        margin-top: 150px;
+
+      }
+      button{
+        position: relative;
+        left:100px;
+        width:300px;
+        height:30px;
+        border-radius: 30px;
+      }
+      .blinking{
+    animation: blinkingText 0.8s infinite;
+ }
+     @keyframes blinkingText{
+    0%{     color: #bf9fee;   }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #bf9fee;   }
+     }
+    </style>
+</head>
+
+<body>
+  <canvas id="canvas" width="800" height="600"></canvas>
+
+  <script src="index.js" charset="utf-8"></script>
+  <div class="gameOver">
+    <h1></h1>
+    <h1></h1>
+    <button id="abc" type="button" name="button">Restart</button>
+  </div>
+
+</body>
+
+</html>
