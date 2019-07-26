@@ -60,7 +60,7 @@ class Cannon {
 
 }
 var bulletImage=new Image();
-bulletImage.src="https://media.giphy.com/media/26DNj3iQi58mrvTDW/giphy.gif";
+bulletImage.src="https://media.giphy.com/media/SIuoHZbiImOxG/giphy.gif";
 
 class Bullet {
   constructor(x, y) {
